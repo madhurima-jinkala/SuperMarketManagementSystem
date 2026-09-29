@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+        .blogs {
+            padding: 4rem 8%;
+        }
+
+        .blogs .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .blogs .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .blogs .box {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .blogs .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .blogs .box img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .blogs .content {
+            padding: 1.5rem;
+        }
+
+        .blogs .content .icons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        /* Modern date badge */
+        .date-badge {
+            background: #2E7D32;
+            color: #fff;
+            font-size: 1.3rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+        }
+
+        .blogs .content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .blogs .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .blogs .content .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            background: #2E7D32;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .blogs .content .btn:hover {
+            background: #1b5e20;
+        }
+    </style>
+
+<body>
+   <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>Value Basket</a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="features.html">features</a>
+        <a href="products.html">products</a>
+        <a href="categories.html">categories</a>
+        <a href="review.html">review</a>
+        <a href="blogs.html">blogs</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div class="shopping-cart">
+    <div class="cart-items"></div> <!-- Dynamic content goes here -->
+    <div class="total"> total :  Rs.0/- </div>
+    <a href="#" class="btn">checkout</a>
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>  
+    <section class="blogs" id="blogs">
+    <h1 class="heading"> <span>blogs</span> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> Admin </a>
+                    <span class="date-badge"><i class="fas fa-calendar"></i> Aug 10, 2025</span>
+                </div>
+                <h3>Fresh & Organic Vegetables</h3>
+                <p>Discover the best organic fruits and veggies with zero chemicals. Eat fresh, stay healthy, and support local farmers.</p>
+                <p>Organic farming avoids synthetic pesticides and fertilizers, making produce safer and more nutritious. By choosing organic, you're also helping reduce environmental pollution and promoting biodiversity.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user-edit"></i> Editor </a>
+                    <span class="date-badge"><i class="fas fa-calendar"></i> Aug 15, 2025</span>
+                </div>
+                <h3>Healthy Lifestyle Tips</h3>
+                <p>Learn how to maintain a balanced diet with seasonal fruits and vegetables that boost immunity and energy levels.</p>
+                <p>Incorporating regular hydration, mindful eating, and physical activity into your routine can drastically improve your well-being. Start small — even a daily walk and a fruit smoothie can make a difference.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user-friends"></i> Guest Author </a>
+                    <span class="date-badge"><i class="fas fa-calendar"></i> Aug 20, 2025</span>
+                </div>
+                <h3>Farm-to-Table Movement</h3>
+                <p>Farm-to-table brings freshly harvested foods directly to your kitchen. A healthier and eco-friendly way of eating.</p>
+                <p>This movement supports local farmers, reduces carbon footprint, and ensures fresher ingredients. Restaurants and homes alike benefit from knowing exactly where their food comes from.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

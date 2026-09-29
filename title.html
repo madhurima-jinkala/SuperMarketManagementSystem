@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to ValueBasket</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('image/home.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: flex-start; /* Align to left */
+  align-items: center;         /* Center vertically */
+  color: white;
+  text-align: left;
+  animation: fadeIn 1.5s ease-in;
+  padding-left: 5%;            /* Optional spacing from edge */
+}
+
+.overlay {
+  background-color: lch(90.26% 87.11 100 / 0.6);
+  padding: 60px 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  margin-left: 100px;
+}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .login-btn {
+      padding: 14px 28px;
+      font-size: 2em;
+      background-color: hsl(356, 93%, 49%);
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+
+    .login-btn:hover {
+      background-color: hsl(356, 93%, 49%);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+        
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .login-btn {
+        padding: 12px 20px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1 style="color:hsl(356, 93%, 49%);">Welcome to ValueBasket</h1>
+    <p>
+      ValueBasket is your one-stop destination for smart shopping. We bring together quality products, transparent pricing, and a seamless user experience—all designed to help you make informed choices and save more. Whether you're browsing essentials or discovering new favorites, ValueBasket makes every purchase feel like a win.
+    </p>
+    <button class="login-btn" onclick="location.href='Login.html'">Login</button>
+  </div>
+</body>
+</html>

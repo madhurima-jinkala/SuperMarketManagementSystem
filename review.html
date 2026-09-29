@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>Value Basket</a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="features.html">features</a>
+        <a href="products.html">products</a>
+        <a href="categories.html">categories</a>
+        <a href="review.html">review</a>
+        <a href="blogs.html">blogs</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div class="shopping-cart">
+    <div class="cart-items"></div> <!-- Dynamic content goes here -->
+    <div class="total"> total : Rs.0/- </div>
+    <a href="#" class="btn">checkout</a>
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+<section class="review" id="review">
+    <h1 class="heading"><span>Customer's Review</span></h1>
+
+    <!-- Review Submission Form -->
+    <form id="review-form" class="review-form">
+        <input type="text" id="reviewer-name" placeholder="Your name" required class="box">
+        <textarea id="review-text" placeholder="Write your review..." required class="box"></textarea>
+        <select id="review-rating" required class="box">
+            <option value="">Select rating</option>
+            <option value="5">★★★★★</option>
+            <option value="4.5">★★★★½</option>
+            <option value="4">★★★★</option>
+            <option value="3.5">★★★½</option>
+            <option value="3">★★★</option>
+        </select>
+        <input type="submit" value="Submit Review" class="btn">
+    </form>
+
+    <!-- Review Display Grid -->
+    <div class="review-grid" id="review-grid">
+        
+    </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

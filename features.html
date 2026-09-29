@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Features</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>Value Basket</a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="features.html">features</a>
+        <a href="products.html">products</a>
+        <a href="categories.html">categories</a>
+        <a href="review.html">review</a>
+        <a href="blogs.html">blogs</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div class="shopping-cart">
+    <div class="cart-items"></div> <!-- Dynamic content goes here -->
+    <div class="total"> total :  Rs.0/- </div>
+    <a href="#" class="btn">checkout</a>
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+    <section class="features" id="features">
+    <h1 class="heading"> <span>features</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>fresh and organic</h3>
+            <p>Fresh vegetables and fruits in cheap price.</p>
+            <div class="more-info" style="display: none;">
+                <p>We source directly from local farms to ensure freshness. No preservatives, no chemicals!</p>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>free delivery</h3>
+            <p>We always do fast delivery on our customers.</p>
+            <div class="more-info" style="display: none;">
+                <p>Delivery is free on all orders above ₹199. Same-day delivery available in select areas.</p>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>easy payments</h3>
+            <p>It is very easy to pay on our website, you can pay easily.</p>
+            <div class="more-info" style="display: none;">
+                <p>Supports UPI, Net Banking, Debit/Credit Cards, and Cash on Delivery with instant confirmation.</p>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
